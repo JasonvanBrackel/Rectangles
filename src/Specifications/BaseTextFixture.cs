@@ -4,8 +4,7 @@ using System.Linq;
 using FakeItEasy;
 using NUnit.Framework;
 
-
-namespace vanBrackel.Rectangles.Specifications
+namespace Specifications
 {
     /// <summary>
     /// BaseTestFixture is used to create BDD style specifications.
@@ -57,7 +56,7 @@ namespace vanBrackel.Rectangles.Specifications
         public void Setup()
         {
             mocks = new Dictionary<Type, object>();
-            DoNotMock = new Dictionary<Type, object>();
+            DoNotMock = DoNotMock ?? new Dictionary<Type, object>();
             CaughtException = new ThereWasNoExceptionButOneWasExpectedException();
 
             BuildMocks();
@@ -94,9 +93,16 @@ namespace vanBrackel.Rectangles.Specifications
             {
                 object theObject;
                 if (!DoNotMock.TryGetValue(mock.Key, out theObject))
+                {
                     theObject = mock.Value;
+                    parameters.Add(theObject.GetType().GetProperty("FakedObject").GetValue(theObject, null));
+                }
+                else
+                {
+                    parameters.Add(theObject);
+                }
 
-                parameters.Add(theObject.GetType().GetProperty("FakedObject").GetValue(theObject, null));
+                
             }
 
             return (TSubjectUnderTest)constructorInfo.Invoke(parameters.ToArray());

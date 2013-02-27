@@ -2,3 +2,13 @@ packages
 obj
 bin
 *.suo
+
+/src/UI/*.tmp_proj
+
+/src/Specifications/*.DotSettings
+
+/src/Domain/*.user
+
+/src/*.DotSettings
+
+/src/*.user

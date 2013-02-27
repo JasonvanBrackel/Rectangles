@@ -7,7 +7,7 @@
     <ProjectGuid>{00FD154C-F669-4328-B01A-99D61D9D4906}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>vanBrackel.Rectangles.Specifications</RootNamespace>
+    <RootNamespace>Specifications</RootNamespace>
     <AssemblyName>vanBrackel.Rectangles.Specifications</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,6 +41,15 @@
     <Reference Include="FakeItEasy">
       <HintPath>..\packages\FakeItEasy.1.8.0\lib\NET40\FakeItEasy.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -56,20 +65,35 @@
   <ItemGroup>
     <Compile Include="BaseTextFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="vanBrackel.Rectangles\Domain\PointSpecs.cs" />
-    <Compile Include="vanBrackel.Rectangles\Domain\RectangleSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\Domain\Factories\ShapeFactorySpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\Domain\Shapes\LineSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\Domain\Shapes\PointSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\Domain\Shapes\RectangleSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\Services\AdjacenyServiceSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\Services\ContainmentServiceSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\Services\IntersectionResultSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\Services\LineIntersectionServiceSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\Services\RectangleDecomposerSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\Services\RectangleIntersectionServiceSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\UI\IoC\DependencyResolverSpecs.cs" />
+    <Compile Include="vanBrackel.Rectangles\UI\Setup\UnityBootstrapperSpecs.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="vanBrackel.Rectangles\Services\" />
-    <Folder Include="vanBrackel.Rectangles\UI\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{9FCC58D3-90CD-4404-887F-47DD0BF10C41}</Project>
+      <Project>{9fcc58d3-90cd-4404-887f-47dd0bf10c41}</Project>
       <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{cabb11a1-53be-4207-a037-4540eaf30b7a}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI\UI.csproj">
+      <Project>{39c9b5b0-8404-45c9-a67a-8255a7ae93da}</Project>
+      <Name>UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

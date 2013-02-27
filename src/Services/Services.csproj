@@ -42,7 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdjacenyService.cs" />
+    <Compile Include="ContainmentService.cs" />
+    <Compile Include="IAdjacencyService.cs" />
+    <Compile Include="IContainmentService.cs" />
+    <Compile Include="IIntersectionResult.cs" />
+    <Compile Include="IntersectionResult.cs" />
+    <Compile Include="IRectangleIntersectionService.cs" />
+    <Compile Include="ILineIntersectionService.cs" />
+    <Compile Include="LineIntersectionService.cs" />
+    <Compile Include="RectangleDecomposer.cs" />
+    <Compile Include="RectangleIntersectionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{9FCC58D3-90CD-4404-887F-47DD0BF10C41}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
