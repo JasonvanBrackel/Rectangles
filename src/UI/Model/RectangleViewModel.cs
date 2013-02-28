@@ -15,13 +15,13 @@ namespace vanBrackel.Rectangles.UI.Model
         public PointViewModel StartingPoint
         {
             get { return _startingPoint; }
-            set { _startingPoint = value; OnPropertyChanged(); }
+            set { _startingPoint = value; OnPropertyChanged("StartingPoint"); }
         }
 
         public PointViewModel EndingPoint
         {
             get { return _endingPoint; }
-            set { _endingPoint = value; OnPropertyChanged(); }
+            set { _endingPoint = value; OnPropertyChanged("EndingPoint"); }
         }
     }
 }

@@ -26,6 +26,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specifications", "Specifications\Specifications.csproj", "{00FD154C-F669-4328-B01A-99D61D9D4906}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "setup", "setup", "{98BA9B41-87B7-4DF1-A823-A37946440774}"
+	ProjectSection(SolutionItems) = preProject
+		..\buildAndRunTests.cmd = ..\buildAndRunTests.cmd
+		..\setup\vanBrackel.Rectangles.build = ..\setup\vanBrackel.Rectangles.build
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

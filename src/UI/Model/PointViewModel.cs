@@ -11,7 +11,7 @@
             set
             {
                 _xCoordinate = value;
-                OnPropertyChanged();
+                OnPropertyChanged("XCoordinate");
             }
         }
 
@@ -21,7 +21,7 @@
             set
             {
                 _yCoordinate = value;
-                OnPropertyChanged();
+                OnPropertyChanged("YCoordinate");
             }
         }
     }

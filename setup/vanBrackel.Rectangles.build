@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<project name="vanBrackel.Rectangles" default="build" basedir="../">
+  <property name="nant.settings.currentframework" value="net-4.0" />
+  <target name="clean" description="remove generated files from last build">
+    <delete>
+      <fileset basedir="build">
+        <include  name="*/**"/>
+      </fileset>
+    </delete>
+  </target>
+  <target name="build" depends="clean" description="build the vs solution file">
+    <solution configuration="Release" outputdir="build">
+      <projects>
+        <include name="src/Domain/Domain.csproj"/>
+        <include name="src/Services/Services.csproj"/>
+        <include name="src/UI/UI.csproj"/>
+      </projects>
+      <assemblyfolders>
+        <include name="src/packages/*/**"/>
+      </assemblyfolders>
+    </solution>
+  </target>
+  <target name="buildtests" depends="build" description="builds unit tests">
+    <solution configuration="Release" outputdir="build/tests">
+      <projects>
+        <include name="src/Specifications/Specifications.csproj"/>
+      </projects>
+      <referenceprojects>
+        <include name="src/UI/UI.csproj"/>
+        <include name="src/Services/Services.csproj"/>
+        <include name="src/Domain/Domain.csproj"/>
+      </referenceprojects>
+    </solution>
+  </target>
+  <target name="test" depends="buildtests">
+    <nunit2>
+      <formatter type="Plain"></formatter>
+      <test>
+        <assemblies>
+          <include name="build/tests/vanBrackel.Specifications.dll"/>
+        </assemblies>
+      <references basedir="build/tests">
+        <include name="*.dll"/>
+        <exclude name="vanBrackel.Specifications.dll"/>
+      </references>
+      </test>
+    </nunit2>
+  </target>
+</project>

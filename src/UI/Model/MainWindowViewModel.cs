@@ -30,7 +30,7 @@ namespace vanBrackel.Rectangles.UI.Model
                     SetInitialStatus();
                 else
                     StatusItems = new[] { new { Message = "Click and drag on the gray canvas to draw another rectangle." } };
-                OnPropertyChanged();
+                OnPropertyChanged("Rectangle1");
             }
         }
 
@@ -50,7 +50,7 @@ namespace vanBrackel.Rectangles.UI.Model
                 else
                     CompareRectangles();
                 
-                OnPropertyChanged();
+                OnPropertyChanged("Rectangle2");
             }
         }
 
@@ -81,13 +81,13 @@ namespace vanBrackel.Rectangles.UI.Model
             get { return _clearCommand; }
             set
             {
-                _clearCommand = value; OnPropertyChanged(); }
+                _clearCommand = value; OnPropertyChanged("ClearCommand"); }
         }
 
         public IEnumerable<object> StatusItems
         {
             get { return _statusItems; }
-            set { _statusItems = value; OnPropertyChanged(); }
+            set { _statusItems = value; OnPropertyChanged("StatusItems"); }
         }
 
         private static void ClearRectangles(MainWindow window)
