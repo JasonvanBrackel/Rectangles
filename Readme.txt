@@ -23,7 +23,12 @@ An internet connection (to update NuGet packages on build)
 Build Instuctions
 -----------------
 Open the src\vanBrackel.Rectangles.sln file
-Click the start button.
+Build the application.
+Click Start to run the application in the debugger.
+
+Installation Instructions
+-------------------------
+Run the Rectangles.msi file to install the application to run.
 
 Known Issues
 ------------

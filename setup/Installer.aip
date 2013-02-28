@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="9.9" version="9.9" Modules="simple" RootPath="." Language="en" Id="{D3DA3A94-BAE8-4969-BEC9-A33972894E17}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:4.0" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="Manufacturer" Value="Jason L. van Brackel"/>
+    <ROW Property="ProductCode" Value="1033:{829A6F72-896C-4BFB-B4D8-2956ECD91A90} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Rectangles"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{54DCC6E8-42B2-49F1-BB68-FCD2BA6EAFDE}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Castle.Core.dll" ComponentId="{C17E4A7E-7033-44B2-8A92-08259FA2436E}" Directory_="APPDIR" Attributes="0" KeyPath="Castle.Core.dll"/>
+    <ROW Component="FakeItEasy.dll" ComponentId="{7B4B7F5A-97EF-4BF9-AE76-C28A08019882}" Directory_="APPDIR" Attributes="0" KeyPath="FakeItEasy.dll"/>
+    <ROW Component="Microsoft.CSharp.dll" ComponentId="{22A221A7-D3BC-435A-81FE-9E56EEFE34E8}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.CSharp.dll"/>
+    <ROW Component="Microsoft.Expression.Interactions.dll" ComponentId="{AD8AAA80-FC33-440B-B375-405D172F3AC2}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Expression.Interactions.dll"/>
+    <ROW Component="Microsoft.Practices.Prism.Interactivity." ComponentId="{1C40B426-7F4D-41D5-A8E7-F61FBFD78FDA}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Practices.Prism.Interactivity.dll"/>
+    <ROW Component="Microsoft.Practices.Prism.dll" ComponentId="{18D67C58-3986-419C-A848-865863A9B50E}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Practices.Prism.dll"/>
+    <ROW Component="Microsoft.Practices.ServiceLocation.dll" ComponentId="{EB0B9456-0B03-4057-B69F-775F279EDDA4}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Practices.ServiceLocation.dll"/>
+    <ROW Component="Microsoft.Practices.Unity.Configuration." ComponentId="{DC937AB2-6583-498D-A902-7417257C2C50}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Practices.Unity.Configuration.dll"/>
+    <ROW Component="Microsoft.Practices.Unity.dll" ComponentId="{3862A741-85CC-444F-9DE2-B85B4BFF671E}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Practices.Unity.dll"/>
+    <ROW Component="PresentationCore.dll" ComponentId="{FD28E444-5A7F-40F6-9500-3A521E4A372D}" Directory_="APPDIR" Attributes="0" KeyPath="PresentationCore.dll"/>
+    <ROW Component="PresentationFramework.dll" ComponentId="{BCCF716C-8DEA-425C-892D-79B1CDD2C810}" Directory_="APPDIR" Attributes="0" KeyPath="PresentationFramework.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{AB9B8FBC-BB40-4FF3-8E76-E75CBB6AF7E9}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{26C4DDB6-51AC-438C-9238-44392C6AF332}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="System.Core.dll" ComponentId="{9C180241-DDCE-40A3-AFC0-A3325375408D}" Directory_="APPDIR" Attributes="0" KeyPath="System.Core.dll"/>
+    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{566171ED-9ADA-4C3C-AF0D-822F805FDD75}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
+    <ROW Component="System.Data.dll" ComponentId="{0AED5EDE-DEFF-4BDA-833B-8080A7FF63C7}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.dll"/>
+    <ROW Component="System.Drawing.dll" ComponentId="{F64F8A51-8739-4B47-BE3D-81E254F3A63E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.dll"/>
+    <ROW Component="System.Windows.Interactivity.dll" ComponentId="{767F5F49-2D0C-4F40-A6C9-C90C9B3F682B}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Interactivity.dll"/>
+    <ROW Component="System.Xaml.dll" ComponentId="{859FBF6C-D5A3-41C6-9584-E51C908897ED}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xaml.dll"/>
+    <ROW Component="System.Xml.Linq.dll" ComponentId="{6B3E2450-AD9A-4A54-829A-DAD1B11D6B69}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
+    <ROW Component="System.Xml.dll" ComponentId="{8F5255E2-7A9B-463E-AF3B-B5F808761B8F}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.dll"/>
+    <ROW Component="System.dll" ComponentId="{9C0218B7-6093-4557-8A53-62E51955D355}" Directory_="APPDIR" Attributes="0" KeyPath="System.dll"/>
+    <ROW Component="WindowsBase.dll" ComponentId="{03F8D159-98F9-42DE-9192-9210A74194D9}" Directory_="APPDIR" Attributes="0" KeyPath="WindowsBase.dll"/>
+    <ROW Component="mscorlib.dll" ComponentId="{B76766AF-F936-44C3-9206-55E53E0F3C74}" Directory_="APPDIR" Attributes="0" KeyPath="mscorlib.dll"/>
+    <ROW Component="nunit.framework.dll" ComponentId="{87FCBE68-A7DD-4AFE-AA3A-54B05A18D4D0}" Directory_="APPDIR" Attributes="0" KeyPath="nunit.framework.dll"/>
+    <ROW Component="vanBrackel.Rectangles.Domain.dll" ComponentId="{1DD1ABAC-F286-439E-9034-04C4F5948784}" Directory_="APPDIR" Attributes="0" KeyPath="vanBrackel.Rectangles.Domain.dll"/>
+    <ROW Component="vanBrackel.Rectangles.Services.dll" ComponentId="{D0BD830E-B029-4C97-801D-4E697999C6AB}" Directory_="APPDIR" Attributes="0" KeyPath="vanBrackel.Rectangles.Services.dll"/>
+    <ROW Component="vanBrackel.Rectangles.Specifications.dll" ComponentId="{360A6F89-EBDA-403E-9066-03795421453B}" Directory_="APPDIR" Attributes="0" KeyPath="vanBrackel.Rectangles.Specifications.dll"/>
+    <ROW Component="vanBrackel.Rectangles.UI.exe" ComponentId="{E7060C92-0779-4ECE-9888-DC424F3E6DFF}" Directory_="APPDIR" Attributes="0" KeyPath="vanBrackel.Rectangles.UI.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="Castle.Core.dll FakeItEasy.dll Microsoft.CSharp.dll Microsoft.Expression.Interactions.dll Microsoft.Practices.Prism.Interactivity. Microsoft.Practices.Prism.dll Microsoft.Practices.ServiceLocation.dll Microsoft.Practices.Unity.Configuration. Microsoft.Practices.Unity.dll PresentationCore.dll PresentationFramework.dll ProductInformation SHORTCUTDIR System.Core.dll System.Data.DataSetExtensions.dll System.Data.dll System.Drawing.dll System.Windows.Interactivity.dll System.Xaml.dll System.Xml.Linq.dll System.Xml.dll System.dll WindowsBase.dll mscorlib.dll nunit.framework.dll vanBrackel.Rectangles.Domain.dll vanBrackel.Rectangles.Services.dll vanBrackel.Rectangles.Specifications.dll vanBrackel.Rectangles.UI.exe"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Castle.Core.dll" Component_="Castle.Core.dll" FileName="Castle~1.dll|Castle.Core.dll" Attributes="0" SourcePath="..\src\packages\Castle.Core.3.1.0\lib\net40-client\Castle.Core.dll" SelfReg="false" NextFile="Microsoft.Practices.Prism.dll"/>
+    <ROW File="FakeItEasy.dll" Component_="FakeItEasy.dll" FileName="FakeIt~1.dll|FakeItEasy.dll" Attributes="0" SourcePath="..\src\packages\FakeItEasy.1.8.0\lib\NET40\FakeItEasy.dll" SelfReg="false" NextFile="Microsoft.Expression.Interactions.dll"/>
+    <ROW File="Microsoft.CSharp.dll" Component_="Microsoft.CSharp.dll" FileName="Micros~2.dll|Microsoft.CSharp.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" SelfReg="false" NextFile="System.Xml.dll"/>
+    <ROW File="Microsoft.Expression.Interactions.dll" Component_="Microsoft.Expression.Interactions.dll" FileName="Micros~3.dll|Microsoft.Expression.Interactions.dll" Attributes="0" SourcePath="..\src\packages\Prism.4.1.0.0\lib\NET40\Microsoft.Expression.Interactions.dll" SelfReg="false" NextFile="Microsoft.Practices.Prism.Interactivity.dll"/>
+    <ROW File="Microsoft.Practices.Prism.Interactivity.dll" Component_="Microsoft.Practices.Prism.Interactivity." FileName="Micros~4.dll|Microsoft.Practices.Prism.Interactivity.dll" Attributes="0" SourcePath="..\src\packages\Prism.4.1.0.0\lib\NET40\Microsoft.Practices.Prism.Interactivity.dll" SelfReg="false" NextFile="Microsoft.Practices.ServiceLocation.dll"/>
+    <ROW File="Microsoft.Practices.Prism.dll" Component_="Microsoft.Practices.Prism.dll" FileName="Micros~1.dll|Microsoft.Practices.Prism.dll" Attributes="0" SourcePath="..\src\packages\Prism.4.1.0.0\lib\NET40\Microsoft.Practices.Prism.dll" SelfReg="false" NextFile="System.Windows.Interactivity.dll"/>
+    <ROW File="Microsoft.Practices.ServiceLocation.dll" Component_="Microsoft.Practices.ServiceLocation.dll" FileName="Micros~5.dll|Microsoft.Practices.ServiceLocation.dll" Attributes="0" SourcePath="..\src\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll" SelfReg="false" NextFile="PresentationCore.dll"/>
+    <ROW File="Microsoft.Practices.Unity.Configuration.dll" Component_="Microsoft.Practices.Unity.Configuration." FileName="Micros~7.dll|Microsoft.Practices.Unity.Configuration.dll" Attributes="0" SourcePath="..\src\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll" SelfReg="false" NextFile="vanBrackel.Rectangles.Services.dll"/>
+    <ROW File="Microsoft.Practices.Unity.dll" Component_="Microsoft.Practices.Unity.dll" FileName="Micros~6.dll|Microsoft.Practices.Unity.dll" Attributes="0" SourcePath="..\src\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll" SelfReg="false" NextFile="Microsoft.Practices.Unity.Configuration.dll"/>
+    <ROW File="PresentationCore.dll" Component_="PresentationCore.dll" FileName="Presen~1.dll|PresentationCore.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationCore.dll" SelfReg="false" NextFile="WindowsBase.dll"/>
+    <ROW File="PresentationFramework.dll" Component_="PresentationFramework.dll" FileName="Presen~2.dll|PresentationFramework.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationFramework.dll" SelfReg="false" NextFile="vanBrackel.Rectangles.Specifications.dll"/>
+    <ROW File="System.Core.dll" Component_="System.Core.dll" FileName="System~2.dll|System.Core.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" SelfReg="false" NextFile="Castle.Core.dll"/>
+    <ROW File="System.Data.DataSetExtensions.dll" Component_="System.Data.DataSetExtensions.dll" FileName="System~5.dll|System.Data.DataSetExtensions.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" SelfReg="false" NextFile="mscorlib.dll"/>
+    <ROW File="System.Data.dll" Component_="System.Data.dll" FileName="System~1.dll|System.Data.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" SelfReg="false" NextFile="System.dll"/>
+    <ROW File="System.Drawing.dll" Component_="System.Drawing.dll" FileName="System~8.dll|System.Drawing.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" SelfReg="false" NextFile="vanBrackel.Rectangles.UI.exe"/>
+    <ROW File="System.Windows.Interactivity.dll" Component_="System.Windows.Interactivity.dll" FileName="System~3.dll|System.Windows.Interactivity.dll" Attributes="0" SourcePath="..\src\packages\Prism.4.1.0.0\lib\NET40\System.Windows.Interactivity.dll" SelfReg="false" NextFile="System.Xml.Linq.dll"/>
+    <ROW File="System.Xaml.dll" Component_="System.Xaml.dll" FileName="System~7.dll|System.Xaml.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xaml.dll" SelfReg="false" NextFile="PresentationFramework.dll"/>
+    <ROW File="System.Xml.Linq.dll" Component_="System.Xml.Linq.dll" FileName="System~4.dll|System.Xml.Linq.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" SelfReg="false" NextFile="System.Data.DataSetExtensions.dll"/>
+    <ROW File="System.Xml.dll" Component_="System.Xml.dll" FileName="System~6.dll|System.Xml.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" SelfReg="false" NextFile="FakeItEasy.dll"/>
+    <ROW File="System.dll" Component_="System.dll" FileName="System.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" SelfReg="false" NextFile="System.Core.dll"/>
+    <ROW File="WindowsBase.dll" Component_="WindowsBase.dll" FileName="Window~1.dll|WindowsBase.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\WindowsBase.dll" SelfReg="false" NextFile="Microsoft.Practices.Unity.dll"/>
+    <ROW File="mscorlib.dll" Component_="mscorlib.dll" FileName="mscorlib.dll" Attributes="0" SourcePath="..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" SelfReg="false" NextFile="Microsoft.CSharp.dll"/>
+    <ROW File="nunit.framework.dll" Component_="nunit.framework.dll" FileName="nunitf~1.dll|nunit.framework.dll" Attributes="0" SourcePath="..\src\packages\NUnit.2.6.2\lib\nunit.framework.dll" SelfReg="false" NextFile="System.Drawing.dll"/>
+    <ROW File="vanBrackel.Rectangles.Domain.dll" Component_="vanBrackel.Rectangles.Domain.dll" FileName="vanBra~1.dll|vanBrackel.Rectangles.Domain.dll" Attributes="0" SourcePath="..\src\Domain\bin\Debug\vanBrackel.Rectangles.Domain.dll" SelfReg="false" NextFile="System.Data.dll"/>
+    <ROW File="vanBrackel.Rectangles.Services.dll" Component_="vanBrackel.Rectangles.Services.dll" FileName="vanBra~2.dll|vanBrackel.Rectangles.Services.dll" Attributes="0" SourcePath="..\src\Services\bin\Debug\vanBrackel.Rectangles.Services.dll" SelfReg="false" NextFile="System.Xaml.dll"/>
+    <ROW File="vanBrackel.Rectangles.Specifications.dll" Component_="vanBrackel.Rectangles.Specifications.dll" FileName="vanBra~3.dll|vanBrackel.Rectangles.Specifications.dll" Attributes="0" SourcePath="..\src\Specifications\bin\Release\vanBrackel.Rectangles.Specifications.dll" SelfReg="false" NextFile="nunit.framework.dll"/>
+    <ROW File="vanBrackel.Rectangles.UI.exe" Component_="vanBrackel.Rectangles.UI.exe" FileName="vanBra~1.exe|vanBrackel.Rectangles.UI.exe" Attributes="0" SourcePath="..\src\UI\bin\Debug\vanBrackel.Rectangles.UI.exe" SelfReg="false" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="..\..\..\Users\jvanbrackel.SEI-DOMAIN-1\Documents\Advanced Installer\Projects\Rectangles\Setup Files" PackageFileName="Rectangles" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_DOTNET40_SEARCH" Signature_="AI_DotNet40SearchSgn" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#vanBrackel.Rectangles.UI.exe]"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Type="1" Source="aicustact.dll" Target="GetLocalizedCredentials"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(AI_DOTNET40_SEARCH = &quot;#1&quot;) OR (AI_DOTNET45_SEARCH &gt;= &quot;4.5&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_DotNet40SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Install" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="vanBrackel.Rectangles.UI.exe" Directory_="SHORTCUTDIR" Name="vanBra~1.exe|vanBrackel.Rectangles.UI.exe" Component_="vanBrackel.Rectangles.UI.exe" Target="[#vanBrackel.Rectangles.UI.exe]" Description="vanBrackel.Rectangles.UI.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="vanBrackel.Rectangles.UI.exe_1" Directory_="DesktopFolder" Name="vanBra~1.exe|vanBrackel.Rectangles.UI.exe" Component_="vanBrackel.Rectangles.UI.exe" Target="[#vanBrackel.Rectangles.UI.exe]" Description="vanBrackel.Rectangles.UI.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

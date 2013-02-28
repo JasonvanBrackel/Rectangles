@@ -12,3 +12,4 @@ bin
 /src/*.DotSettings
 
 /src/*.user
+/setup/Installer-cache
